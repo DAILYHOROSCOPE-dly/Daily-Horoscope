@@ -121,9 +121,21 @@
             <h3>Vrishabh (Taurus)</h3>
             <p id="taurus-prediction">Today’s Prediction: A good day for financial planning. Stay patient.</p>
         </div>
+<!-- Gemini -->
+<div class="zodiac-card">
+  <img src="https://img.icons8.com/color/96/000000/gemini.png" alt="Gemini">
+  <h3>Mithun (Gemini)</h3>
+  <p id="gemini-prediction">Today’s Prediction: Communication will bring new opportunities.</p>
+</div>
 
-        <!-- Repeat for all 12 zodiac signs -->
-    </div>
+<!-- Cancer -->
+<div class="zodiac-card">
+  <img src="https://img.icons8.com/color/96/000000/cancer.png" alt="Cancer">
+  <h3>Kark (Cancer)</h3>
+  <p id="cancer-prediction">Today’s Prediction: Emotional stability is important today.</p>
+</div>
+
+<!-- Add the remaining 8 signs similarly -->    </div>
 
     <footer>
         © 2024 Daily Rashiphal. Predictions are for entertainment purposes only.
@@ -133,18 +145,35 @@
         // Language Toggle (English/Hindi)
         const languageToggle = document.getElementById('language-toggle');
         const predictions = {
-            english: {
-                aries: "Today’s Prediction: You will feel energetic and confident. Focus on your goals.",
-                taurus: "Today’s Prediction: A good day for financial planning. Stay patient.",
-                // Add predictions for all 12 signs
-            },
-            hindi: {
-                aries: "आज का भविष्यफल: आज आप ऊर्जावान और आत्मविश्वास से भरे रहेंगे। अपने लक्ष्यों पर ध्यान दें।",
-                taurus: "आज का भविष्यफल: वित्तीय योजना के लिए एक अच्छा दिन है। धैर्य रखें।",
-                // Add Hindi predictions for all 12 signs
-            }
-        };
-
+  english: {
+    aries: "Today’s Prediction: You will feel energetic and confident. Focus on your goals.",
+    taurus: "Today’s Prediction: A good day for financial planning. Stay patient.",
+    gemini: "Today’s Prediction: Communication will bring new opportunities.",
+    cancer: "Today’s Prediction: Emotional stability is important today.",
+    leo: "Today’s Prediction: A great day for leadership and confidence.",
+    virgo: "Today’s Prediction: Focus on details and organization.",
+    libra: "Today’s Prediction: Relationships and balance will be key today.",
+    scorpio: "Today’s Prediction: Trust your intuition and emotions.",
+    sagittarius: "Today’s Prediction: Adventure and learning bring joy.",
+    capricorn: "Today’s Prediction: Hard work will lead to success.",
+    aquarius: "Today’s Prediction: Innovation and creativity shine today.",
+    pisces: "Today’s Prediction: Dream big and trust your intuition."
+  },
+  hindi: {
+    aries: "आज का भविष्यफल: आज आप ऊर्जावान और आत्मविश्वास से भरे रहेंगे। अपने लक्ष्यों पर ध्यान दें।",
+    taurus: "आज का भविष्यफल: वित्तीय योजना के लिए एक अच्छा दिन है। धैर्य रखें।",
+    gemini: "आज का भविष्यफल: संवाद नए अवसर लाएगा।",
+    cancer: "आज का भविष्यफल: भावनात्मक स्थिरता आज महत्वपूर्ण है।",
+    leo: "आज का भविष्यफल: नेतृत्व और आत्मविश्वास के लिए एक शानदार दिन।",
+    virgo: "आज का भविष्यफल: विवरण और संगठन पर ध्यान दें।",
+    libra: "आज का भविष्यफल: संबंध और संतुलन आज महत्वपूर्ण होंगे।",
+    scorpio: "आज का भविष्यफल: अपनी अंतर्दृष्टि और भावनाओं पर भरोसा करें।",
+    sagittarius: "आज का भविष्यफल: साहसिक कार्य और सीखने से खुशी मिलेगी।",
+    capricorn: "आज का भविष्यफल: कड़ी मेहनत सफलता लाएगी।",
+    aquarius: "आज का भविष्यफल: नवाचार और रचनात्मकता आज चमकेंगे।",
+    pisces: "आज का भविष्यफल: बड़े सपने देखें और अपनी अंतर्दृष्टि पर भरोसा करें।"
+  }
+};
         let isHindi = false;
         languageToggle.addEventListener('click', () => {
             isHindi = !isHindi;
